@@ -26,7 +26,7 @@ Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a
 | **Apr**                                                     | **May**                                             | **Jun**                                          |
 | [2 Apr 2025](2025/2025-04-02.md)                            | [14 May 2025](2025/2025-05-14.md)                  | [25 Jun 2025: New Beginning](2025/2025-06-25.md)|
 | [9 Apr 2025](2025/2025-04-09.md)                            | [22 May 2025: Finale](2025/2025-05-22.md)          |                                                  |
-| [17 Apr 2025](2025/2025-04-17.md)                          | [Epilogue: One Year Later](2025/epilogue.md)        |                                                  |
+| [17 Apr 2025](2025/2025-04-17.md)                          | [Epilogue: One Year Later](2025/2025-05-epilogue.md)        |                                                  |
 | [23 Apr 2025](2025/2025-04-23.md)                          |                                                     |                                                  |
 | [30 Apr 2025](2025/2025-04-30.md)                          |                                                     |                                                  |
 | **Jul**                                                     | **Aug**                                             | **Sep**                                          |

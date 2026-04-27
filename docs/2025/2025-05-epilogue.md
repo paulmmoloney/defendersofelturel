@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Epilogue: One Year Later
 
 **[Previously](2025-05-22.md):** The party infiltrated Zariel's flying fortress and successfully persuaded her to change her mind about the choice she made to Asmodeus's argument to many years ago. Her angelic form is restored in a explosion of light and we escape the doomed fortress on Lulu's back (now full size) and in Norgreath's ring. Zariel flies to Elturel, where the planetar we met before emerges from the Companion. She severs the chains which hold the floating city, while the planetar raises it up, taking it and us back home from Avernus to Faerûn. Zariel gives us a single golden feather, in case we ever need aid if Asmodeus takes retribution. The last we see of Zariel and Lulu is their forms flying into the sunset.
@@ -197,3 +201,4 @@ People in the nearby village reported that an explosion shook the ground and the
 ---
 
 [But, it's not quite the end of the Defenders of Elturel's adventures....](2025-06-25.md)
+
