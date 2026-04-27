@@ -1,8 +1,8 @@
 # Defenders of Elturel
 
-Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a [HackSlashRun campaign](HackSlashRun.md).
+Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a [HackSlashRun campaign](about/hackslashrun.md).
 
-[Campaign Background](Campaign-Background.md){ .md-button .md-button--primary } [Campaign Introduction ](Defenders-of-Elturel-Introduction.md){ .md-button .md-button--primary }
+[Campaign Background](about/campaign-background.md){ .md-button .md-button--primary } [Campaign Introduction ](about/introduction.md){ .md-button .md-button--primary }
 
 **2026**
 

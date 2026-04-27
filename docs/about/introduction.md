@@ -18,7 +18,7 @@ You and your fellow adventurers join with
 your liege as they arrive at the city of Elturel
 and begin the negotiations.
 
-## Hell is coming
+## Hell is Coming...
 
 Darkness shrouds the Sword Coast. The nearly
 successful summoning of Tiamat, the Queen of
@@ -36,7 +36,7 @@ What darkness the characters find in these
 shadowed lairs are nothing compared what
 they will find in the days to come.
 
-## And You are the Hellriders
+## ...And You Are The Hellriders
 
 Each of your characters belongs to the Hellriders.
 Also known as the Riders of Elturel, are an elite
@@ -76,31 +76,21 @@ inspiration
 immediately re-roll a roll that has already
 happened
 
-### Exhaustion expanded
+### Exhaustion Expanded
 
 * A character that falls unconscious due to
 damage also gains a level of exhaustion,
 which remains even when the damage is
-cured
+cured.
 
-* A critical hit on an unconscious character
-imposes a further level of exhaustion
+* A critical hit on an unconscious character imposes a further level of exhaustion.
 
-### EXHAUSTION (Condition)
+* The Exhaustion condition is cumulative: each time you receive it, you gain 1 level of exhaustion.
+* You die if your exhaustion level exceeds 10.
+* When you make any d20 roll, you subtract your exhaustion level from the d20 roll.
+* Subtract your exhaustion level from the Spell save DC of any Spell you cast.
+* Finishing a long rest removes 1 of your levels of exhaustion. Some spells also remove exhaustion. When your exhaustion level reaches 0, you are no longer exhausted.
 
-* This Condition is cumulative. Each time you
-receive it, you gain 1 level of exhaustion
-* You die if your exhaustion level exceeds 10
-* When you make any d20 roll, you subtract
-your exhaustion level from the d20 roll
-* Subtract your exhaustion level from the
-Spell save DC of any Spell you cast
-* Ending the Condition. Finishing a Long Rest
-removes 1 of your levels of exhaustion.
-Some spells also remove exhaustion. When
-your exhaustion level reaches 0, you are no
-longer Exhausted.
-
-### Consequences of the past
+### Consequences of the Past
 
 * Weirdly, some spells that were previously available are no longer known at all - e.g. Counterspell is not available.
