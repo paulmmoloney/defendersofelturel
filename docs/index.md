@@ -2,7 +2,44 @@
 
 Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a [HackSlashRun campaign](about/hackslashrun.md).
 
-[Campaign Background](about/campaign-background.md){ .md-button .md-button--primary } [Campaign Introduction ](about/introduction.md){ .md-button .md-button--primary } [The Party ](about/party.md){ .md-button .md-button--primary }
+<!-- [Campaign Background](about/campaign-background.md){ .md-button .md-button--primary } [Campaign Introduction ](about/introduction.md){ .md-button .md-button--primary } [The Party ](about/party.md){ .md-button .md-button--primary } --> 
+
+<div class="grid cards" markdown>
+
+-   :octicons-book-24:{ .lg .middle } __Campaign background__
+
+    ---
+
+    General background information on Elturel, a major city-state in the Forgotten Realms setting, and nearby places within the borders of Elturgard.
+
+    [:octicons-arrow-right-24: Campaign background](about/campaign-background.md)
+	
+-   :octicons-info-24:{ .lg .middle } __Campaign introduction__
+
+    ---
+
+    Information on the Hellriders, whom the party start the campaign by joining. Also some house rules of the campaign, such as heroic inspiration and expanded exhaustion.
+
+    [:octicons-arrow-right-24: Campaign introduction](about/introduction.md)
+
+-   :octicons-people-24:{ .lg .middle } __The party__
+
+    ---
+
+    A role call of the Defenders of Elturel themselves.
+
+    [:octicons-arrow-right-24: The party](about/party.md)
+
+-   :material-clock-fast:{ .lg .middle } __Campaign diary__
+
+    ---
+
+    The weekly log of the campaign.
+
+    [:octicons-arrow-right-24: License](#)
+
+</div>
+
 
 **2026**
 
