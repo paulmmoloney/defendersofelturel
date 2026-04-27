@@ -6,10 +6,14 @@
 #
 # ============================================================================
 
-[project]
 
+
+[project]
+repo_url = "https://github.com/paulmmoloney/defendersofelturel"
+repo_name = "paulmmoloney/defendersofelturel"
 docs_dir = "docs"
 site_dir = "site"
+edit_uri = "edit/main/docs/"
 
 # The site_name is shown in the page header and the browser window title
 #
@@ -192,7 +196,7 @@ extra_css = ["stylesheets/extra.css"]
 [project.theme]
 
 # change this to "classic" to use the traditional Material for MkDocs look.
-variant = "classic"
+variant = "modern"
 
 # Zensical allows you to override specific blocks, partials, or whole
 # templates as well as to define your own templates. To do this, uncomment
@@ -241,13 +245,13 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.edit",
+    "content.action.edit",
 
     # If you have a repository configured and turn on this feature, Zensical
     # will generate a button that allows the user to view the Markdown
     # code for the current page.
     # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.view",
+    "content.action.view",
 
     # Code annotations allow you to add an icon with a tooltip to your
     # code blocks to provide explanations at crucial points.
@@ -384,7 +388,11 @@ logo = "images/elturel.png"
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://github.com/zensical/ui/tree/master/dist/.icons
 # ----------------------------------------------------------------------------
-#[project.theme.icon]
+
+[project.theme.icon]
+edit = "material/pencil"
+view = "material/eye"
+repo = "fontawesome/brands/git-alt"
 #logo = "lucide/smile"
 
 # ----------------------------------------------------------------------------
@@ -445,10 +453,12 @@ custom_checkbox = true
 alternate_style = true
 [project.markdown_extensions.pymdownx.blocks.caption]
 [project.markdown_extensions.zensical.extensions.glightbox]
+[project.markdown_extensions.toc]
+permalink = true
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/paulmmoloney/defendersofelturel"
