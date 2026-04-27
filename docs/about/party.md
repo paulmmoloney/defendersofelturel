@@ -9,7 +9,7 @@
 
 ## Barrisso
 
-![](party/images/barrisso.jpg){: style="height:150px;width:150px"}
+![](images/barrisso.jpg){: style="height:150px;width:150px"}
 
 * [Barrisso Axari](https://www.dndbeyond.com/characters/110850067)
 * Justin
@@ -20,7 +20,7 @@
 
 ## Galen
 
-![](party/images/galen.jpeg){: style="height:150px;width:150px"}
+![](images/galen.jpeg){: style="height:150px;width:150px"}
 
 * [Galen Hearthcomb](https://www.dndbeyond.com/characters/110980886)
 * Eamon
@@ -30,7 +30,7 @@
 
 ## Gralok
 
-![](party/images/gralok.png){: style="height:150px;width:150px"}
+![](images/gralok.png){: style="height:150px;width:150px"}
 
 * [Gralok Rua](https://www.dndbeyond.com/characters/110980094)
 * Jim
@@ -40,7 +40,7 @@
 
 ## Karthis
 
-![](party/images/karthis.jpg){: style="height:150px;width:150px"}
+![](images/karthis.jpg){: style="height:150px;width:150px"}
 
 * [Karthis](https://www.dndbeyond.com/characters/110952593)
 * Denis
@@ -50,7 +50,7 @@
 
 ## Lunghiss
 
-![](party/images/lunghiss.jpg){: style="height:150px;width:150px"}
+![](images/lunghiss.jpg){: style="height:150px;width:150px"}
 
 * [Lunghiss](https://www.dndbeyond.com/characters/110954313)
 * Paul
@@ -60,7 +60,7 @@
 
 ## Norgreath
 
-![](party/images/norgreath.png){: style="height:150px;width:150px"}
+![](images/norgreath.png){: style="height:150px;width:150px"}
 
 * [Norgreath](https://www.dndbeyond.com/characters/99951788)
 * Michéal
