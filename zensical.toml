@@ -462,3 +462,8 @@ permalink = true
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
 link = "https://github.com/paulmmoloney/defendersofelturel"
+
+[project.extra.analytics]
+provider = "google"
+property = "G-819ZZ77W9L"
+
