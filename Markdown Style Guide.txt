@@ -1,0 +1,44 @@
+Implementing a tasklist
+=======================
+
+- [X] Succeeded
+- [X] Failed
+{: .task-failed }
+- [ ] Not done
+
+
+
+
+Adding a zoomable image with caption
+====================================
+
+<figure markdown>
+  ![Caption](./images/image.png){ width="400" }
+  <figcaption>Caption</figcaption>
+</figure>
+
+
+Adding a bookmark
+=================
+
+<a name="ygnath">
+
+
+
+Adding a link to a bookmark (from another page)
+===============================================
+
+[Was torturing Klim Jhasso.](3-Jan-2024.md#ygnath)
+
+
+
+Adding a collapsible scroll
+===========================
+
+???+ scroll "Title" - expanded by default
+
+	Text (indented)
+
+???scroll "Title" - not expanded by default
+
+	Text (indented)
