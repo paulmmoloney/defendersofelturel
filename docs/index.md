@@ -14,6 +14,7 @@ Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a
 |                                                             | [25 Feb 2026](2026/2026-02-25.md)                  | [25 Mar 2026](2026/2026-03-25.md)               | 
 | **Apr**                                                     | **May**                                             | **Jun**                                          |
 | [1 Apr 2026](2026/2026-04-01.md)                            |                                                     |                                                  |
+| [8 Apr 2026](2026/2026-04-08.md)                            |                                                     |                                                  |
 
 **2025**
 
