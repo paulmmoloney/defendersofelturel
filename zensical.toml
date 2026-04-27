@@ -52,8 +52,10 @@ nav = [
 	{"Home" = "index.md" },
 	{"About" = [
 		{"Introduction" = "about/introduction.md"},
-		{"Campaign background" = "about/campaign-background.md"},
+		{"Campaign Background" = "about/campaign-background.md"},
+        {"The Party" = "about/party.md"},
 		{"HackSlashRun" = "about/hackslashrun.md"}
+
 	]},
 	{"2023" = [
 		{"18 Oct 2023: Session Zero" = "2023/2023-10-18.md"},
