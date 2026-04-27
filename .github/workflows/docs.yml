@@ -24,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build site
-        run: zensical build --clean --config zensical.yml --output site
+        run: python -m zensical build --clean --config zensical.toml --output site
 
       - name: Verify build output
         run: |
