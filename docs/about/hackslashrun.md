@@ -20,7 +20,7 @@
 * [Waterdeep: Dungeon of the Mad Mage](https://en.wikipedia.org/wiki/Waterdeep:_Dungeon_of_the_Mad_Mage)
 * [Lost City of Mezro](https://www.dmsguild.com/product/258780/Lost-City-of-Mezro?filters=45680_0_0_0_0_0_0_0)
 * [Return to the Tomb of Horrors](https://en.wikipedia.org/wiki/Return_to_the_Tomb_of_Horrors)
-* [Tomb of Annihilation](https://en.wikipedia.org/wiki/Tomb_of_Annihilation) 
+* [Tomb of Annihilation](https://en.wikipedia.org/wiki/Tomb_of_Annihilation)
 * [Dawn of the Overmind](https://www.drivethrurpg.com/en/product/17354/dawn-of-the-overmind-2e)
 
 ## Aspirants of the Diamond Throne (2004-2006)
