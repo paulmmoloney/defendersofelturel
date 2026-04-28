@@ -16,6 +16,22 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      # --- LINTING SETUP ---
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install linters
+        run: npm install -g markdownlint-cli cspell
+
+      - name: Lint Markdown
+        run: markdownlint "docs/**/*.md"
+
+      - name: Spell check
+        run: cspell "docs/**/*.md"
+
+      # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"

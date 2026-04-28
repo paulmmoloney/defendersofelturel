@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "language": "en-GB",
+  "ignorePaths": [
+    "site",
+    "node_modules",
+    ".git"
+  ],
+  "words": [
+    "MkDocs",
+    "Zensical"
+  ]
+}
