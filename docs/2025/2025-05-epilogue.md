@@ -11,7 +11,7 @@ comments: true
 Galen would go back to Elturel an help the people of the city get their lives back together, healing and restoring those with the greatest need. All the while fighting the cultists that hindered our investigation into what happened to Elturel (before we found Zariel's contract). After a year, it is obvious that city will never be restored to it's former glory and a cleric on his own can't really do much combating those who would sow chaos. Galen how has has to choose, stay in Elturel helping the wretched population or move, maybe to Baldur's Gate, where he can join a Temple of Tir and fight with others against the forces of chaos.
 
 ## Norgreath
-With my character
+
 Norgreath knows he will gain access to powerful Warlock spells at advanced levels, particularly Limited Wish at 14th Level and Wish at 17th Level. There are many other powerful spells available (almost one new Mystic Arcanum spell per new level) such as Force Cage or Plane Shift at 13th Level, Dominate Monster at 15th Level.
 
 Therefore, he does not wish to retire, but to continue active engagement to gain experience and level to achieve these powers that have motivated him since he first took the Warlock’s path.

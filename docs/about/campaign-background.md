@@ -49,6 +49,7 @@ In the city’s center, directly beneath the Companion, is a cliff-sided tor tha
 Its benefits notwithstanding, the constant illumination that bathes Elturel can be difficult for newcomers to adjust to. Inns and boarding halls usually swathe the windows of their guest rooms in thick cloth to block out the light so that visitors can get some sleep. Without the onset of dawn or dusk to frame the day’s labors, citizens rely on the tolling of the bells from the High Hall to denote the start and end of the workday. The lack of natural darkness means the city sees less of the sorts of activities that city folk in other places often undertake at night. Elturel has a low incidence of brawling and ambushes in the alleys around its inns and taverns, and those who would engage in thievery must be especially careful and shrewd to succeed.
 
 ## Other Communities
+
 A few other major settlements of note are located within the borders of Elturgard. I describe three of them briefly here.
 
 ### Berdusk
