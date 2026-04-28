@@ -2,7 +2,7 @@
   "default": true,
   "MD013": false,   // line length (MkDocs often breaks this)
   "MD033": false,   // inline HTML allowed (MkDocs supports it)
-  "MD041": false    // first line heading not required
-  "MD036": false    // Allows a whole line to be bolded 
-  "MD007": false    // This is temporary until I configure it to use 4 spaces for indentation rather than 2
+  "MD041": false,    // first line heading not required
+  "MD036": false,    // Allows a whole line to be bolded 
+  "MD007": false,    // This is temporary until I configure it to use 4 spaces for indentation rather than 2
 }
