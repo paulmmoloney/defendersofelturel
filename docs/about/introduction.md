@@ -18,7 +18,7 @@ You and your fellow adventurers join with
 your liege as they arrive at the city of Elturel
 and begin the negotiations.
 
-## Hell is Coming...
+## Hell is Coming…
 
 Darkness shrouds the Sword Coast. The nearly
 successful summoning of Tiamat, the Queen of
@@ -36,7 +36,7 @@ What darkness the characters find in these
 shadowed lairs are nothing compared what
 they will find in the days to come.
 
-## And You Are The Hellriders
+## …And You Are The Hellriders
 
 Each of your characters belongs to the Hellriders.
 Also known as the Riders of Elturel, are an elite

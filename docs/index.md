@@ -62,12 +62,12 @@ Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a
 
     ---
 
-	[:octicons-arrow-right-24: Jan](2025/index.md#Jan) [:octicons-arrow-right-24: Feb](2025/index.md#Feb) [:octicons-arrow-right-24: Mar](2025/index.md#Mar) [:octicons-arrow-right-24: Apr](2025/index.md#Apr) [:octicons-arrow-right-24: May](2025/index.md#May) [:octicons-arrow-right-24: Jun](2025/index.md#Jun) [:octicons-arrow-right-24: Jul](2025/index.md#Jul) [:octicons-arrow-right-24: Aug](2025/index.md#Aug) [:octicons-arrow-right-24: Sep](2025/index.md#Sep) [:octicons-arrow-right-24: Oct](2025/index.md#Oct) [:octicons-arrow-right-24: Nov](2025/index.md#Nov) [:octicons-arrow-right-24: Dec](2025/index.md#Dec)
+    [:octicons-arrow-right-24: Jan](2025/index.md#Jan) [:octicons-arrow-right-24: Feb](2025/index.md#Feb) [:octicons-arrow-right-24: Mar](2025/index.md#Mar) [:octicons-arrow-right-24: Apr](2025/index.md#Apr) [:octicons-arrow-right-24: May](2025/index.md#May) [:octicons-arrow-right-24: Jun](2025/index.md#Jun) [:octicons-arrow-right-24: Jul](2025/index.md#Jul) [:octicons-arrow-right-24: Aug](2025/index.md#Aug) [:octicons-arrow-right-24: Sep](2025/index.md#Sep) [:octicons-arrow-right-24: Oct](2025/index.md#Oct) [:octicons-arrow-right-24: Nov](2025/index.md#Nov) [:octicons-arrow-right-24: Dec](2025/index.md#Dec)
 
 - :octicons-clock-24:{ .lg .middle } [**2026**](2026/index.md)
 
     ---
 
-	[:octicons-arrow-right-24: Jan](2026/index.md#Jan) [:octicons-arrow-right-24: Feb](2026/index.md#Feb) [:octicons-arrow-right-24: Mar](2026/index.md#Mar) [:octicons-arrow-right-24: Apr](2026/index.md#Apr)
+    [:octicons-arrow-right-24: Jan](2026/index.md#Jan) [:octicons-arrow-right-24: Feb](2026/index.md#Feb) [:octicons-arrow-right-24: Mar](2026/index.md#Mar) [:octicons-arrow-right-24: Apr](2026/index.md#Apr)
 
 </div>
