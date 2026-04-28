@@ -200,4 +200,3 @@ People in the nearby village reported that an explosion shook the ground and the
 ---
 
 [But, it's not quite the end of the Defenders of Elturel's adventures....](2025-06-25.md)
-
