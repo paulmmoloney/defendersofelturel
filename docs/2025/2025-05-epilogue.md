@@ -18,7 +18,6 @@ Therefore, he does not wish to retire, but to continue active engagement to gain
 
 Exposure to the evil in Avernus has solidified his good alignment. He is happy to help Barrisso and future good-focused tasks. He’ll become more religious, and pray to the god of Barrisso (not sure who this is) and/or Galen, giving thanks for their divine rescue.
 
-
 Norgreath will use his status as a saviour of Elturel, and as a noble, to find a position of influence in Elturel itself and in Baldur’s Gate – he’ll establish a teleportation circle in each location and will seek to learn the symbols needed to establish some other circles e.g. Waterdeep. He’ll have a base (doesn’t need to be fancy – maybe rooms permanently leased in a friendly tavern) in both Elturel and Baldur’s Gate – he’ll think it’s premature to have a more major base like a castle or a manor house, until he reaches 17th Level.
 
 He will work to rebuild a strategic alliance between Elturgard and Baldur’s Gate cemented by a common allegiance to the Lord’s Alliance. He will tell a narrative of the recent tensions as coming from the poison that was introduced in Elturel by the devils’ pact, that has now been broken, with the city returned to the prime material plane, and Zariel restored to her angelic form.  He’ll actively engage with the Lord’s Alliance and try to recruit other members of the party, especially Barrisso (due to his role) and Karthis (due to his family connection) in joint campaigns supporting this agenda.
