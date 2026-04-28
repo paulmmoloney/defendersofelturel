@@ -10,7 +10,6 @@
     "MkDocs",
     "Zensical"
   ],
-  ,
   "dictionaries": ["custom"],
   "dictionaryDefinitions": [
     {
