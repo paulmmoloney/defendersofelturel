@@ -26,7 +26,7 @@ jobs:
         run: npm install -g markdownlint-cli cspell
 
       - name: Lint Markdown
-        run: markdownlint "docs/**/*.md"
+        run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
 
       - name: Spell check
         run: cspell "docs/**/*.md"
