@@ -9,5 +9,14 @@
   "words": [
     "MkDocs",
     "Zensical"
+  ],
+  ,
+  "dictionaries": ["custom"],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom",
+      "path": "./.cspell/dnd-terms.txt",
+      "addWords": true
+    }
   ]
 }
