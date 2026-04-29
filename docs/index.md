@@ -28,7 +28,7 @@ Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a
 
     ---
 
-    A role call of the Defenders of Elturel themselves.
+    A roll call of the Defenders of Elturel themselves.
 
     [:octicons-arrow-right-24: The party](about/party.md)
 
