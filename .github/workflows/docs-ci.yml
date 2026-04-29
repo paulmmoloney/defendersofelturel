@@ -35,23 +35,35 @@ jobs:
         run: sudo apt-get install -y jq
 
       - name: Grammar check
-        run: |
-          for file in $(find docs -name "*.md"); do
-            text=$(cat "$file")
+          run: |
+            set -e
 
-            response=$(curl -s -X POST "http://localhost:8010/v2/check" \
-              -d "language=en-GB" \
-              -d "disabledCategories=STYLE,TYPOS,TYPOGRAPHY" \
-              --data-urlencode "text=$text")
+            for file in $(find docs -name "*.md"); do
+              echo "Checking $file"
 
-            matches=$(echo "$response" | jq '.matches | length')
+              text=$(cat "$file")
 
-            if [ "$matches" -gt 0 ]; then
-              echo "❌ Grammar issues in $file"
-              echo "$response" | jq '.matches[] | {message, context: .context.text}'
-              exit 1
-            fi
-          done
+              response=$(curl -s -X POST "http://localhost:8010/v2/check" \
+                -d "language=en-GB" \
+                --data-urlencode "text=$text")
+
+              # Filter ONLY grammar issues
+              grammar_issues=$(echo "$response" | jq '[.matches[] | select(.rule.issueType == "grammar")]')
+
+              count=$(echo "$grammar_issues" | jq 'length')
+
+              if [ "$count" -gt 0 ]; then
+                echo "❌ Grammar issues in $file"
+
+                echo "$grammar_issues" | jq '.[] | {
+                  message,
+                  context: .context.text,
+                  offset
+                }'
+
+                exit 1
+              fi
+            done
 
       # --- BUILD ONLY (NO DEPLOY) ---
       - name: Setup Python
