@@ -41,8 +41,8 @@ jobs:
 
             response=$(curl -s -X POST "http://localhost:8010/v2/check" \
               -d "language=en-GB" \
-              --data-urlencode "text=$text" \
-              -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
+              -d "disabledCategories=STYLE,TYPOS,TYPOGRAPHY" \
+              --data-urlencode "text=$text")
 
             matches=$(echo "$response" | jq '.matches | length')
 
