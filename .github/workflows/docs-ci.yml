@@ -35,36 +35,35 @@ jobs:
         run: sudo apt-get install -y jq
 
       - name: Grammar check
-          run: |
-            set -e
+        run: |
+          set -e
 
-            for file in $(find docs -name "*.md"); do
-              echo "Checking $file"
+          for file in $(find docs -name "*.md"); do
+            echo "Checking $file"
 
-              text=$(cat "$file")
+            text=$(cat "$file")
 
-              response=$(curl -s -X POST "http://localhost:8010/v2/check" \
-                -d "language=en-GB" \
-                --data-urlencode "text=$text")
+            response=$(curl -s -X POST "http://localhost:8010/v2/check" \
+              -d "language=en-GB" \
+              --data-urlencode "text=$text")
 
-              # Filter ONLY grammar issues
-              grammar_issues=$(echo "$response" | jq '[.matches[] | select(.rule.issueType == "grammar")]')
+            # Filter ONLY grammar issues
+            grammar_issues=$(echo "$response" | jq '[.matches[] | select(.rule.issueType == "grammar")]')
 
-              count=$(echo "$grammar_issues" | jq 'length')
+            count=$(echo "$grammar_issues" | jq 'length')
 
-              if [ "$count" -gt 0 ]; then
-                echo "❌ Grammar issues in $file"
+            if [ "$count" -gt 0 ]; then
+              echo "❌ Grammar issues in $file"
 
-                echo "$grammar_issues" | jq '.[] | {
-                  message,
-                  context: .context.text,
-                  offset
-                }'
+              echo "$grammar_issues" | jq '.[] | {
+                message,
+                context: .context.text,
+                offset
+              }'
 
-                exit 1
-              fi
-            done
-
+              exit 1
+            fi
+          done
       # --- BUILD ONLY (NO DEPLOY) ---
       - name: Setup Python
         uses: actions/setup-python@v5
