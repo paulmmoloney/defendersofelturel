@@ -1,0 +1,66 @@
+name: Documentation CI
+
+on:
+  push:
+    branches: ["**"]   # all branches
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      # --- LINTING ---
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install linters
+        run: npm install -g markdownlint-cli cspell
+
+      - name: Markdown lint
+        run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
+
+      - name: Spell check
+        run: cspell "docs/**/*.md"
+
+      # --- OPTIONAL: LANGUAGE TOOL (Docker) ---
+      - name: Start LanguageTool
+        run: docker run -d -p 8010:8010 silviof/docker-languagetool
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Grammar check
+        run: |
+          for file in $(find docs -name "*.md"); do
+            text=$(cat "$file")
+
+            response=$(curl -s -X POST "http://localhost:8010/v2/check" \
+              -d "language=en-GB" \
+              --data-urlencode "text=$text" \
+              -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
+
+            matches=$(echo "$response" | jq '.matches | length')
+
+            if [ "$matches" -gt 0 ]; then
+              echo "❌ Grammar issues in $file"
+              echo "$response" | jq '.matches[] | {message, context: .context.text}'
+              exit 1
+            fi
+          done
+
+      # --- BUILD ONLY (NO DEPLOY) ---
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build site (test only)
+        run: python -m zensical build --clean
