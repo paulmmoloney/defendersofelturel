@@ -81,6 +81,8 @@ betusked
 Bhaal
 Bhaltus
 Bitterbreath
+Blindsense
+blindsense
 Blindsight
 blindsight
 Bloodfuel
