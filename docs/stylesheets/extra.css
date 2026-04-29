@@ -68,3 +68,15 @@
 	-webkit-mask-image: var(--md-tasklist-icon--failed);
 	mask-image: var(--md-tasklist-icon--failed);
 }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(215,215,215,0.75),
+    rgba(0,0,0,0)
+  );
+  box-shadow: 0px -2px 4px rgba(136,136,136,0.75);
+}
