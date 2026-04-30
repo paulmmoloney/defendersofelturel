@@ -1,5 +1,7 @@
 ---
 comments: true
+tags:
+  - 2025
 ---
 
 # Epilogue: One Year Later
