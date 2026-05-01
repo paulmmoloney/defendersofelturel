@@ -69,6 +69,7 @@
 	mask-image: var(--md-tasklist-icon--failed);
 }
 
+/* 
 hr {
   border: 0;
   height: 1px;
@@ -78,12 +79,44 @@ hr {
     rgba(215,215,215,0.75),
     rgba(0,0,0,0)
   );
-  box-shadow: 0px -2px 4px rgba(136,136,136,0.75);
-}
+  box-shadow: 0px -2px 3px rgba(136,136,136,0.75);
+} */
+
+/* default (light) */
 
 .md-header__title,
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3 {
-    color: #440088 !important;
+    color: #440088 ;
+}
+
+/* dark mode override */
+[data-md-color-scheme="slate"] {
+    --heading-color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+    color: var(--heading-color);
+}
+
+.md-grid {
+  max-width: 1100px; 
+}
+
+/* Buttons colour for light and dark */
+
+/* Light mode */
+[data-md-color-scheme="default"] .md-button--primary {
+    background-color: #0036b6;
+    color: #ffffff;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .md-button--primary {
+    background-color: #ffffff;
+    color: #000000;
 }
