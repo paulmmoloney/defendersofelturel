@@ -38,6 +38,13 @@ jobs:
 
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
+        
+              
+      - name: Install Lychee link checker
+        run: |
+          curl -sSfL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz \
+          | tar -xz
+          sudo mv lychee /usr/local/bin/
 
       - name: Build site
         run: python -m zensical build --clean
@@ -47,6 +54,20 @@ jobs:
           echo "=== BUILD OUTPUT ==="
           ls -R site
           test -f site/index.html || (echo "❌ Missing index.html" && exit 1)
+          
+      - name: Start local web server
+        run: |
+          python -m http.server 8000 --directory site &
+          sleep 5**
+
+      - name: Check links
+        run: |
+          lychee \
+            --verbose \
+            --no-progress \
+            --accept 200,429 \
+            --exclude-mail \
+            http://127.0.0.1:8000
 
       - name: Disable Jekyll
         run: touch site/.nojekyll
