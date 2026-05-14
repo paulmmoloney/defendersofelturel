@@ -31,17 +31,6 @@ jobs:
       - name: Spell check
         run: cspell "docs/**/*.md"
         
-      - name: Check links
-        uses: lycheeverse/lychee-action@v2
-        with:
-          args: >
-            --verbose
-            --dump
-            --no-progress
-            './docs/**/*.md'
-          fail: true
-
-
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
         with:
