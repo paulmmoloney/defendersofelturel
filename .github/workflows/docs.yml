@@ -23,7 +23,7 @@ jobs:
           node-version: 20
 
       - name: Install linters
-        run: npm install -g markdownlint-cli cspell
+        run: npm install -g markdownlint-cli cspell html-validate
 
       - name: Lint Markdown
         run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
@@ -41,6 +41,10 @@ jobs:
 
       - name: Build site
         run: python -m zensical build --clean --strict
+        
+      - name: Validate HTML output
+        run: |
+          html-validate site/**/*.html --formatter stylish
 
       - name: Verify build output
         run: |
