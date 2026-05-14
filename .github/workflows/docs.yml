@@ -36,6 +36,8 @@ jobs:
         with:
           args: >
             --verbose
+            --dump
+            --format detailed
             --no-progress
             './docs/**/*.md'
           fail: true
