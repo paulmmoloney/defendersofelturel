@@ -23,14 +23,14 @@ jobs:
           node-version: 20
 
       - name: Install linters
-        run: npm install -g markdownlint-cli cspell
+        run: npm install -g markdownlint-cli cspell html-validate
 
       - name: Lint Markdown
         run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
 
       - name: Spell check
         run: cspell "docs/**/*.md"
-
+        
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
         with:
@@ -40,7 +40,12 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Build site
-        run: python -m zensical build --clean
+        run: python -m zensical build --clean --strict
+       
+      # Commented this out as the output from Zensical fails it for multiple reasons 
+      # - name: Validate HTML output
+      #   run: |
+      #    html-validate site/**/*.html --formatter stylish
 
       - name: Verify build output
         run: |
