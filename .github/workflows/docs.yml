@@ -24,12 +24,23 @@ jobs:
 
       - name: Install linters
         run: npm install -g markdownlint-cli cspell html-validate
+        
+       # --- VALE ---
+      - name: Install Vale
+        run: |
+          wget https://github.com/errata-ai/vale/releases/latest/download/vale_Linux_64-bit.tar.gz
+          tar -xzf vale_Linux_64-bit.tar.gz
+          sudo mv vale /usr/local/bin/
+
+      - name: Run Vale
+        run: vale docs
 
       - name: Lint Markdown
         run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
 
       - name: Spell check
         run: cspell "docs/**/*.md"
+        
         
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
