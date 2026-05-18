@@ -29,14 +29,10 @@ jobs:
         run: npm install -g markdownlint-cli cspell html-validate
         
        # --- VALE ---
-      - name: Install Vale
-        run: |
-          wget https://github.com/errata-ai/vale/releases/latest/download/vale_Linux_64-bit.tar.gz
-          tar -xzf vale_Linux_64-bit.tar.gz
-          sudo mv vale /usr/local/bin/
-
       - name: Run Vale
-        run: vale docs
+        uses: errata-ai/vale-action@v2
+        with:
+          files: docs
 
       - name: Lint Markdown
         run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
