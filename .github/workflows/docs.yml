@@ -59,31 +59,37 @@ jobs:
 
       - name: Grammar check Markdown files
         run: |
-          set -e
+          set -euo pipefail
 
           FAILED=0
-          
-          for file in $(find docs -name "*.md"); do
+
+          find docs -name "*.md" -print0 | while IFS= read -r -d '' file; do
             echo "Checking $file"
 
-            text=$(cat "$file" \
-              | perl -0777 -pe 's/^---.*?---\s*//sm' \
-              | perl -0777 -pe 's/```.*?```//sg' \
-              | perl -pe 's/`[^`]+`//g' \
-              | perl -pe 's!\[([^\]]+)\]\([^)]+\)!\1!g' \
-              | perl -pe 's!https?://\S+!!g')
+            # Create cleaned temp file (avoids huge CLI args + preserves preprocessing)
+            tmpfile=$(mktemp)
+
+            perl -0777 -pe '
+              s/^---.*?---\s*//sm;
+              s/```.*?```//sg;
+              s/`[^`]+`//g;
+              s!\[([^\]]+)\]\([^)]+\)!$1!g;
+              s!https?://\S+!!g;
+            ' "$file" > "$tmpfile"
 
             response=$(curl -s -X POST "http://localhost:8010/v2/check" \
               -d "language=en-GB" \
-              --data-urlencode "text=$text" \
+              --data-urlencode "text@$tmpfile" \
               -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
+
+            rm "$tmpfile"
 
             grammar_issues=$(echo "$response" | jq -r '
               .matches[]
-                | select(
-                    .rule.id
-                    | test("^(EN_A_VS_AN|AGREEMENT|MISSING|VERB|SENTENCE_FRAGMENT|DOUBLE_NEGATION)")
-                  )
+              | select(
+                  .rule.id
+                  | test("^(EN_A_VS_AN|AGREEMENT|MISSING|VERB|SENTENCE_FRAGMENT|DOUBLE_NEGATION)")
+                )
             ')
 
             if echo "$grammar_issues" | grep -q .; then
@@ -98,12 +104,10 @@ jobs:
                 | {rule: .rule.id, message, context: .context.text}
               '
 
-              FAILED=1   # ✔ mark failure but DO NOT exit
+              FAILED=1
             fi
           done
-          
-          # ✔ fail only AFTER all files processed
-          
+
           if [ "$FAILED" -eq 1 ]; then
             exit 1
           fi
