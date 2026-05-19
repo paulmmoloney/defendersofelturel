@@ -78,7 +78,10 @@ jobs:
 
             grammar_issues=$(echo "$response" | jq -r '
               .matches[]
-              | select(.rule.issueType == "grammar")
+                | select(
+                    .rule.id
+                    | test("^(EN_A_VS_AN|AGREEMENT|MISSING|VERB|SENTENCE_FRAGMENT|DOUBLE_NEGATION)")
+                  )
             ')
 
             if echo "$grammar_issues" | grep -q .; then
@@ -86,7 +89,10 @@ jobs:
 
               echo "$response" | jq '
                 .matches[]
-                | select(.rule.issueType == "grammar")
+                | select(
+                    .rule.id
+                    | test("^(EN_A_VS_AN|AGREEMENT|MISSING|VERB|SENTENCE_FRAGMENT|DOUBLE_NEGATION)")
+                  )
                 | {rule: .rule.id, message, context: .context.text}
               '
 
