@@ -59,31 +59,31 @@ jobs:
 
       - name: Grammar check Markdown files
         run: |
-        set -e
+            set -e
 
-        for file in $(find docs -name "*.md"); do
-          echo "Checking $file"
+            for file in $(find docs -name "*.md"); do
+              echo "Checking $file"
 
-          text=$(cat "$file" \
-            | perl -0777 -pe 's/^---.*?---\s*//sm' \
-            | perl -0777 -pe 's/```.*?```//sg' \
-            | perl -pe 's/`[^`]+`//g' \
-            | perl -pe 's!\[([^\]]+)\]\([^)]+\)!\1!g' \
-            | perl -pe 's!https?://\S+!!g')
+              text=$(cat "$file" \
+                | perl -0777 -pe 's/^---.*?---\s*//sm' \
+                | perl -0777 -pe 's/```.*?```//sg' \
+                | perl -pe 's/`[^`]+`//g' \
+                | perl -pe 's!\[([^\]]+)\]\([^)]+\)!\1!g' \
+                | perl -pe 's!https?://\S+!!g')
 
-          response=$(curl -s -X POST "http://localhost:8010/v2/check" \
-            -d "language=en-GB" \
-            --data-urlencode "text=$text" \
-            -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
+              response=$(curl -s -X POST "http://localhost:8010/v2/check" \
+                -d "language=en-GB" \
+                --data-urlencode "text=$text" \
+                -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
 
-          matches=$(echo "$response" | jq '.matches | length')
+              matches=$(echo "$response" | jq '.matches | length')
 
-          if [ "$matches" -gt 0 ]; then
-            echo "❌ Grammar issues found in $file"
-            echo "$response" | jq '.matches[] | {message, context: .context.text}'
-            exit 1
-          fi
-        done
+              if [ "$matches" -gt 0 ]; then
+                echo "❌ Grammar issues found in $file"
+                echo "$response" | jq '.matches[] | {message, context: .context.text}'
+                exit 1
+              fi
+            done
 
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
