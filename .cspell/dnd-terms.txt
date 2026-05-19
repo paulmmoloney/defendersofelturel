@@ -7,6 +7,7 @@ abishai
 abishais
 Aboleths
 Aetheir
+Agathys
 Ahhh
 Akhila
 Alaundo
@@ -80,6 +81,8 @@ betusked
 Bhaal
 Bhaltus
 Bitterbreath
+Blindsense
+blindsense
 Blindsight
 blindsight
 Bloodfuel
@@ -440,6 +443,8 @@ Norgreath
 Norgreath's
 Norgreath’s
 northmost
+northside
+Northside
 Nuska
 Oathoon
 Obranch
@@ -551,6 +556,7 @@ shapechanger
 Shapechanger
 shapeshifted
 Shaylock
+Shaziad
 Shiarra's
 shivs
 shockwaves
@@ -586,6 +592,8 @@ Spellplague
 Spined
 spined
 Stalaczic
+starscape
+Starscape
 stele
 steles
 Stien
@@ -682,6 +690,8 @@ Venthroxoth
 Vernus
 Vispira
 Volo’s
+VORASHAN
+Vorashan
 Vrakir
 Vrakir's
 vrock

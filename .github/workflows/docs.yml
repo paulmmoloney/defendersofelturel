@@ -4,6 +4,9 @@ on:
   push:
     branches: [main, master]
 
+  pull_request:
+    branches: [main, master]
+    
 permissions:
   contents: read
   pages: write
@@ -23,7 +26,13 @@ jobs:
           node-version: 20
 
       - name: Install linters
-        run: npm install -g markdownlint-cli cspell
+        run: npm install -g markdownlint-cli cspell html-validate
+        
+       # --- VALE ---
+      - name: Run Vale
+        uses: errata-ai/vale-action@v2
+        with:
+          files: docs
 
       - name: Lint Markdown
         run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
@@ -50,25 +59,31 @@ jobs:
 
       - name: Grammar check Markdown files
         run: |
-          set -e
-          for file in $(find docs -name "*.md"); do
-            echo "Checking $file"
+        set -e
 
-            text=$(cat "$file")
+        for file in $(find docs -name "*.md"); do
+          echo "Checking $file"
 
-            response=$(curl -s -X POST "http://localhost:8010/v2/check" \
-              -d "language=en-GB" \
-              --data-urlencode "text=$text" \
-              -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
+          text=$(cat "$file" \
+            | perl -0777 -pe 's/^---.*?---\s*//sm' \
+            | perl -0777 -pe 's/```.*?```//sg' \
+            | perl -pe 's/`[^`]+`//g' \
+            | perl -pe 's!\[([^\]]+)\]\([^)]+\)!\1!g' \
+            | perl -pe 's!https?://\S+!!g')
 
-            matches=$(echo "$response" | jq '.matches | length')
+          response=$(curl -s -X POST "http://localhost:8010/v2/check" \
+            -d "language=en-GB" \
+            --data-urlencode "text=$text" \
+            -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
 
-            if [ "$matches" -gt 0 ]; then
-              echo "❌ Grammar issues found in $file"
-              echo "$response" | jq '.matches[] | {message, context: .context.text}'
-              exit 1
-            fi
-          done
+          matches=$(echo "$response" | jq '.matches | length')
+
+          if [ "$matches" -gt 0 ]; then
+            echo "❌ Grammar issues found in $file"
+            echo "$response" | jq '.matches[] | {message, context: .context.text}'
+            exit 1
+          fi
+        done
 
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
@@ -79,7 +94,12 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Build site
-        run: python -m zensical build --clean
+        run: python -m zensical build --clean --strict
+       
+      # Commented this out as the output from Zensical fails it for multiple reasons 
+      # - name: Validate HTML output
+      #   run: |
+      #    html-validate site/**/*.html --formatter stylish
 
       - name: Verify build output
         run: |
