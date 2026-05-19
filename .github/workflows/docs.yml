@@ -78,15 +78,15 @@ jobs:
 
             grammar_issues=$(echo "$response" | jq -r '
               .matches[]
-              | select(.rule.id | test("EN_A_VS_AN|AGREEMENT|VERB|MISSING|DOUBLE_NEGATION"))
+              | select(.rule.issueType == "grammar")
             ')
 
-            if [ -n "$grammar_issues" ]; then
+            if echo "$grammar_issues" | grep -q .; then
               echo "❌ Grammar issues found in $file"
 
               echo "$response" | jq '
                 .matches[]
-                | select(.rule.id | test("EN_A_VS_AN|AGREEMENT|VERB|MISSING|DOUBLE_NEGATION"))
+                | select(.rule.issueType == "grammar")
                 | {rule: .rule.id, message, context: .context.text}
               '
 
