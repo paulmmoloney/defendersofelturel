@@ -10,7 +10,7 @@ tags:
 
 ## Galen
 
-Galen would go back to Elturel an help the people of the city get their lives back together, healing and restoring those with the greatest need. All the while fighting the cultists that hindered our investigation into what happened to Elturel (before we found Zariel's contract). After a year, it is obvious that city will never be restored to it's former glory and a cleric on his own can't really do much combating those who would sow chaos. Galen how has has to choose, stay in Elturel helping the wretched population or move, maybe to Baldur's Gate, where he can join a Temple of Tir and fight with others against the forces of chaos.
+Galen would go back to Elturel and help the people of the city get their lives back together, healing and restoring those with the greatest need. All the while, he is fighting the cultists that hindered our investigation into what happened to Elturel (before we found Zariel's contract). After a year, it is obvious that city will never be restored to its former glory and a cleric on his own cannot really do much combating those who would sow chaos. Galen now has has to choose: stay in Elturel helping the wretched population, or move, maybe to Baldur's Gate, where he can join a Temple of Tir and fight with others against the forces of chaos.
 
 ## Norgreath
 
