@@ -4,6 +4,9 @@ on:
   push:
     branches: [main, master]
 
+  pull_request:
+    branches: [main, master]
+    
 permissions:
   contents: read
   pages: write
@@ -24,12 +27,19 @@ jobs:
 
       - name: Install linters
         run: npm install -g markdownlint-cli cspell html-validate
+        
+       # --- VALE ---
+      - name: Run Vale
+        uses: errata-ai/vale-action@v2
+        with:
+          files: docs
 
       - name: Lint Markdown
         run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
 
       - name: Spell check
         run: cspell "docs/**/*.md"
+        
         
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
