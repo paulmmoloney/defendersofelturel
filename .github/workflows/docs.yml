@@ -80,7 +80,7 @@ jobs:
 
               if [ "$matches" -gt 0 ]; then
                 echo "❌ Grammar issues found in $file"
-                echo "$response" | jq '.matches[] | {message, context: .context.text}'
+                echo "$response" | jq '.matches[] | {rule: .rule.id, message, context: .context.text}'
                 exit 1
               fi
             done
