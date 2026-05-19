@@ -63,7 +63,7 @@ jobs:
 
           FAILED=0
 
-          find docs -name "*.md" -print0 | while IFS= read -r -d '' file; do
+          while IFS= read -r -d '' file; do
             echo "Checking $file"
 
             # Create cleaned temp file (avoids huge CLI args + preserves preprocessing)
@@ -106,7 +106,7 @@ jobs:
 
               FAILED=1
             fi
-          done
+          done < <(find docs -name "*.md" -print0)
 
           if [ "$FAILED" -eq 1 ]; then
             exit 1
