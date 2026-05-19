@@ -61,6 +61,8 @@ jobs:
         run: |
           set -e
 
+          FAILED=0
+          
           for file in $(find docs -name "*.md"); do
             echo "Checking $file"
 
@@ -96,9 +98,15 @@ jobs:
                 | {rule: .rule.id, message, context: .context.text}
               '
 
-              exit 1
+              FAILED=1   # ✔ mark failure but DO NOT exit
             fi
           done
+          
+          # ✔ fail only AFTER all files processed
+          
+          if [ "$FAILED" -eq 1 ]; then
+            exit 1
+          fi
 
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
