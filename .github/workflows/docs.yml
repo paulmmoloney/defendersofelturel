@@ -40,7 +40,78 @@ jobs:
       - name: Spell check
         run: cspell "docs/**/*.md"
         
-        
+      # --- GRAMMAR CHECK (LanguageTool) ---
+      - name: Start LanguageTool server
+        run: |
+          docker run -d -p 8010:8010 --name languagetool silviof/docker-languagetool
+
+      - name: Wait for LanguageTool
+        run: |
+          for i in {1..15}; do
+            curl -s http://localhost:8010/v2/languages && echo "Ready" && exit 0
+            echo "Waiting for LanguageTool..."
+            sleep 3
+          done
+          echo "LanguageTool failed to start" && exit 1
+
+      - name: Install jq (JSON parser)
+        run: sudo apt-get install -y jq
+
+      - name: Grammar check Markdown files
+        run: |
+          set -euo pipefail
+
+          FAILED=0
+
+          while IFS= read -r -d '' file; do
+            echo "Checking $file"
+
+            # Create cleaned temp file (avoids huge CLI args + preserves preprocessing)
+            tmpfile=$(mktemp)
+
+            perl -0777 -pe '
+              s/^---.*?---\s*//sm;
+              s/```.*?```//sg;
+              s/`[^`]+`//g;
+              s!\[([^\]]+)\]\([^)]+\)!$1!g;
+              s!https?://\S+!!g;
+            ' "$file" > "$tmpfile"
+
+            response=$(curl -s -X POST "http://localhost:8010/v2/check" \
+              -d "language=en-GB" \
+              --data-urlencode "text@$tmpfile" \
+              -d "disabledRules=MORFOLOGIK_RULE_EN_GB")
+
+            rm "$tmpfile"
+
+            grammar_issues=$(echo "$response" | jq -r '
+              .matches[]
+              | select(
+                  .rule.id
+                  | test("^(EN_A_VS_AN|AGREEMENT|MISSING|VERB|SENTENCE_FRAGMENT|DOUBLE_NEGATION)")
+                )
+            ')
+
+            if echo "$grammar_issues" | grep -q .; then
+              echo "❌ Grammar issues found in $file"
+
+              echo "$response" | jq '
+                .matches[]
+                | select(
+                    .rule.id
+                    | test("^(EN_A_VS_AN|AGREEMENT|MISSING|VERB|SENTENCE_FRAGMENT|DOUBLE_NEGATION)")
+                  )
+                | {rule: .rule.id, message, context: .context.text}
+              '
+
+              FAILED=1
+            fi
+          done < <(find docs -name "*.md" -print0)
+
+          if [ "$FAILED" -eq 1 ]; then
+            exit 1
+          fi
+
       # --- PYTHON / BUILD ---
       - uses: actions/setup-python@v5
         with:
