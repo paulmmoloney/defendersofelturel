@@ -26,7 +26,7 @@ anymore
 Apocalypto
 Arabella
 Arborea
-Arcanaloth
+arcanaloth
 Arcanaloth's
 Archmage
 Argh
@@ -663,6 +663,7 @@ truesight
 Turvan
 Tuur
 Tymora
+Tyneborn
 Ubbalux
 Ubbalux's
 Ulder
@@ -727,6 +728,7 @@ yugoloths
 Z'Neth
 Zalbor
 Zarelite
+Zaretta
 Zariel
 Zariel's
 Zariel’s
