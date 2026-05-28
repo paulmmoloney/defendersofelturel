@@ -641,8 +641,7 @@ Tiamat
 Tiamat's
 tiefling
 tieflings
-Timeborn
-Timeborne
+Timebourne
 Tiras
 Toril
 Torm
@@ -728,7 +727,7 @@ yugoloths
 Z'Neth
 Zalbor
 Zarelite
-Zaretta
+Zareta
 Zariel
 Zariel's
 Zariel’s
