@@ -2,7 +2,7 @@
 
 ## Defenders of Elturel (2023 to present)
 
-[Defenders of Elturel](http://defendersofelturel.web1337.net) (2023 to present), Dungeons and Dragons campaign.
+[Defenders of Elturel](https://paulmmoloney.github.io/defendersofelturel) (2023 to present), Dungeons and Dragons campaign.
 
 ## Call of Cthulhu/Shadowdark/Traveller (2023)
 
