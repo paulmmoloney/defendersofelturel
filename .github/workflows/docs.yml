@@ -134,6 +134,15 @@ jobs:
           ls -R site
           test -f site/index.html || (echo "❌ Missing index.html" && exit 1)
 
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --verbose
+            --no-progress
+            --accept 200,301,302,403,999
+            site/**/*.html
+
       - name: Disable Jekyll
         run: touch site/.nojekyll
 
