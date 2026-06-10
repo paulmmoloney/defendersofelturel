@@ -134,6 +134,7 @@ Crom
 Cuiric’s
 Cyric
 Daeral
+Darli
 Darkvision
 darkvision
 defense
@@ -340,10 +341,12 @@ killzone
 Klav
 Klim
 koralk
+Kos
 Kovik
 Kreeg
 Kreeg's
 Kress
+Kreeger
 Krull
 Ktharn
 Kursi
@@ -532,6 +535,7 @@ Sarcasia
 Satiir
 Savikas
 scalemail
+Scather
 Schilla
 Scornubel
 Scornubel’s
