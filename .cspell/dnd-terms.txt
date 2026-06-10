@@ -145,6 +145,7 @@ demiplane
 Deneir
 designateddirection
 Deva
+deva
 devish
 Diomidis
 Diomids
