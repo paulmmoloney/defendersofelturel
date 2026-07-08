@@ -127,6 +127,7 @@ cogbox
 cogboxes
 colored
 conc
+Cormac
 Cormyr
 coster
 Counterspell
@@ -352,6 +353,7 @@ Kress
 Kreeger
 Krull
 Ktharn
+K'thar
 Kursi
 laborers
 labors
