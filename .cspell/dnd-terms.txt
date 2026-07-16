@@ -492,6 +492,8 @@ pipeweed
 Plagueshield
 Planartarium
 Planebreaker
+planeshifts
+planeshifted
 Planetar
 planetar
 planetars
