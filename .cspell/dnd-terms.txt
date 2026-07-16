@@ -549,6 +549,7 @@ Schilla
 Scornubel
 Scornubel’s
 scry
+scries
 Scryon
 Seatower
 Seltern
