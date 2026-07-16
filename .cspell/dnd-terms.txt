@@ -68,6 +68,7 @@ Bazelsteen
 Bazelsteen's
 Beastlands
 Beastmaster
+Bedegar
 behavior
 Beholderkin
 beholderkin
@@ -649,6 +650,7 @@ thunks
 thurible
 Thurstwell
 Thurstwell's
+Thutin
 Tiamat
 Tiamat's
 tiefling
@@ -693,6 +695,7 @@ Underways
 ungag
 unmagical
 unsolid
+Urasta
 Vaaz
 Vanthampur
 Vanthampur's
