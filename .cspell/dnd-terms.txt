@@ -74,6 +74,7 @@ Beholderkin
 beholderkin
 Beirgroach
 Bellandi
+Bellerone
 Bentbow
 Berdusk
 Berduskan
@@ -357,6 +358,7 @@ Kreeger
 Krull
 Ktharn
 K'thar
+Kyother
 Kursi
 laborers
 labors
@@ -700,6 +702,7 @@ unmagical
 unsolid
 Urasta
 Vaaz
+Valthor
 Vanthampur
 Vanthampur's
 Vanthampurs
