@@ -185,6 +185,7 @@ Eithlin
 eladrin
 Eladrin
 Elfsong
+Elstar
 Elturel
 Elturel's
 Elturel’s
@@ -383,6 +384,7 @@ lifeforce
 Lightward
 Lindar
 lizardfolk
+longbowmen
 Longstrider
 Lunghiss
 Lunghiss'
