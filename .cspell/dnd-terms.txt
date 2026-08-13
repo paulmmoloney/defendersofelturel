@@ -36,6 +36,8 @@ Armor
 armor
 armored
 armory
+armsman
+armsmen
 Ashmedai
 Ashtongue
 Asmodeus
