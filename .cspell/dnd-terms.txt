@@ -204,6 +204,7 @@ Euryale
 Evano
 Eveningstar
 Eversmoking
+evoker
 excruciarch
 extradimensional
 extraplanar
@@ -431,6 +432,7 @@ Modron
 modron
 Modrons
 modrons
+Morgant
 Mooncolor
 Moradin
 Mordenkainen’s
