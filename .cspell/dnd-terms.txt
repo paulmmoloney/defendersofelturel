@@ -186,6 +186,7 @@ efreeti
 Eithlin
 eladrin
 Eladrin
+Elenar
 Elfsong
 Elstar
 Elturel
@@ -425,6 +426,7 @@ mezzoloths
 Michéal
 Mielikki
 Mildar
+mimir
 minotaurs
 Minsc
 Misara
