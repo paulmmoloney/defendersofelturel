@@ -315,6 +315,7 @@ homeworld
 honor
 honoring
 humanish
+hippogriff
 Idlewyld
 Idyllglen
 Ignes
@@ -730,6 +731,7 @@ Vrakir's
 vrock
 vrocks
 warband
+warg
 Warlork
 Waterdeep
 waterskins
