@@ -61,5 +61,5 @@ Welcome to the **Defenders of Elturel** DND 5th Edition campaign blog 2023 on, a
     [:octicons-arrow-right-24: Jan](2026/index.md#jan) [:octicons-arrow-right-24: Feb](2026/index.md#feb) [:octicons-arrow-right-24: Mar](2026/index.md#mar) [:octicons-arrow-right-24: Apr](2026/index.md#apr)
     [:octicons-arrow-right-24: May](2026/index.md#may) [:octicons-arrow-right-24: Jun](2026/index.md#jun)
     [:octicons-arrow-right-24: Jul](2026/index.md#jul) [:octicons-arrow-right-24: Aug](2026/index.md#aug)
-
+    [:octicons-arrow-right-24: Sep](2026/index.md#sep)
 </div>
