@@ -33,6 +33,8 @@ jobs:
         uses: errata-ai/vale-action@v2
         with:
           files: docs
+          fail_on_error: true
+          reporter: github-check
 
       - name: Lint Markdown
         run: markdownlint -c .markdownlint.jsonc "docs/**/*.md"
