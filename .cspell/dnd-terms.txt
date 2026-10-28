@@ -371,6 +371,7 @@ Kyother
 Kursi
 laborers
 labors
+Lagriss
 Lannish
 Laraelra
 Lathander
@@ -383,6 +384,7 @@ Lemure
 lemures
 Levistus
 Levistus'
+Leystone
 Lianna
 Liara
 Libernen
@@ -390,6 +392,7 @@ lich
 lifeforce
 Lightward
 Lindar
+Lindel
 lizardfolk
 longbowmen
 Longstrider
@@ -453,6 +456,7 @@ Naja
 Najara
 Nalfeshnee
 nalfeshnee
+Nambu
 Narzugon
 narzugon
 Nascius
