@@ -42,6 +42,7 @@ armsman
 armsmen
 Ashmedai
 Ashtongue
+Askalan
 Asmodeus
 Asmodeus's
 Athkatla
@@ -698,6 +699,7 @@ Trollskull
 Trondoz
 Truesight
 truesight
+Turog
 Turvan
 Tuur
 Tymora
