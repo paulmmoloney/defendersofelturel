@@ -368,6 +368,7 @@ Kress
 Kreeger
 Krull
 Ktharn
+Ktharsh
 K'thar
 Kyother
 Kursi
@@ -424,6 +425,8 @@ marilith
 Marithidran
 Marvius
 Mechanus
+Melf's
+Melf
 mephit
 Merregon
 Merrywile
